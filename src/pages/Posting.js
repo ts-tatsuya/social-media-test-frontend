@@ -22,7 +22,7 @@ function Posting() {
         navigate('/login')
     }
     const renderPostingList = () => {
-        if (postings.totalPostings - postings.count <= 0) {
+        if (postings.totalPostings - postings.count <= 0 && hasMore) {
             setHasMore(false);
         }
         console.log(postings);
